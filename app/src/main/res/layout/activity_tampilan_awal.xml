@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.web.hayat.latiful.penyimpanandata.TampilanAwal">
+
+    <EditText
+        android:id="@+id/idNama"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nama"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/idNIM"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:text="NIM"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idNama" />
+
+    <TableRow
+        android:id="@+id/idPreferences"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idNIM">
+
+        <Button
+            android:id="@+id/idBacaPref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="idBacaKlik"
+            android:text="Baca" />
+
+        <Button
+            android:id="@+id/idSimpanPref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Simpan" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Preferences"
+            tools:textSize="24sp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/idInternalStorage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idPreferences">
+
+        <Button
+            android:id="@+id/idBacaInternal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="idBacaInternal"
+            android:text="BACA" />
+
+        <Button
+            android:id="@+id/idSimpanInternal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="idSaveInternal"
+            android:text="SIMPAN" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="InternalStorage"
+            tools:textSize="24sp" />
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/idExternalStorage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idInternalStorage">
+
+        <Button
+            android:id="@+id/idBacaExternal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="idBacaExternal"
+            android:text="BACA" />
+
+        <Button
+            android:id="@+id/idSimpanExternal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="idSaveExternal"
+            android:text="SIMPAN" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ExternalStorage"
+            tools:textSize="24sp" />
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/idSQLStorage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idExternalStorage">
+
+        <Button
+            android:id="@+id/idBacaSQL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="idBacaSQLKlik"
+            android:text="BACA" />
+
+        <Button
+            android:id="@+id/idSimpanSQL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="idSimpanSQLKlik"
+            android:text="SIMPAN" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SQLStorage"
+            tools:textSize="24sp" />
+
+    </TableRow>
+
+    <Spinner
+        android:id="@+id/idSpinner"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="336dp" />
+
+</android.support.constraint.ConstraintLayout>
